@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/db', 'Relations@main');
+
+Route::get('/main/{id}', 'User@showUser');
